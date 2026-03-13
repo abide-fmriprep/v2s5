@@ -1,0 +1,76 @@
+Log file for defect2seg
+Fri Mar 13 11:02:05 CET 2026
+
+setenv SUBJECTS_DIR /out/sourcedata/freesurfer
+cd /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/scripts
+/opt/freesurfer/bin/defect2seg --s sub-v2s5x29557_ses-1 --rh-only --cortex
+
+freesurfer-linux-ubuntu22_x86_64-7.3.2-20220804-6354275
+defect2seg 7.3.2
+Linux dna066 5.14.0-427.37.1.el9_4.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Sep 13 12:41:50 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux
+pid 1647515
+mri_label2label --label-cortex /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.orig.nofix /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/mri/aseg.presurf.mgz 0 /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/label/rh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+39 non-cortical segments detected
+only using segment with 18853 vertices
+erasing segment 0 (vno[0] = 5482)
+erasing segment 1 (vno[0] = 13194)
+erasing segment 2 (vno[0] = 22639)
+erasing segment 3 (vno[0] = 56314)
+erasing segment 4 (vno[0] = 61323)
+erasing segment 5 (vno[0] = 62804)
+erasing segment 7 (vno[0] = 141462)
+erasing segment 8 (vno[0] = 167993)
+erasing segment 9 (vno[0] = 168006)
+erasing segment 10 (vno[0] = 176554)
+erasing segment 11 (vno[0] = 183977)
+erasing segment 12 (vno[0] = 185919)
+erasing segment 13 (vno[0] = 191681)
+erasing segment 14 (vno[0] = 206464)
+erasing segment 15 (vno[0] = 207899)
+erasing segment 16 (vno[0] = 211228)
+erasing segment 17 (vno[0] = 222862)
+erasing segment 18 (vno[0] = 226145)
+erasing segment 19 (vno[0] = 246870)
+erasing segment 20 (vno[0] = 253659)
+erasing segment 21 (vno[0] = 255079)
+erasing segment 22 (vno[0] = 256559)
+erasing segment 23 (vno[0] = 257056)
+erasing segment 24 (vno[0] = 258204)
+erasing segment 25 (vno[0] = 258290)
+erasing segment 26 (vno[0] = 258368)
+erasing segment 27 (vno[0] = 259711)
+erasing segment 28 (vno[0] = 259996)
+erasing segment 29 (vno[0] = 260126)
+erasing segment 30 (vno[0] = 261207)
+erasing segment 31 (vno[0] = 261246)
+erasing segment 32 (vno[0] = 262594)
+erasing segment 33 (vno[0] = 262658)
+erasing segment 34 (vno[0] = 271300)
+erasing segment 35 (vno[0] = 298026)
+erasing segment 36 (vno[0] = 303168)
+erasing segment 37 (vno[0] = 306653)
+erasing segment 38 (vno[0] = 338688)
+mri_label2vol --defects /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.orig.nofix /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.defect_labels /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/mri/orig.mgz 2000 0 /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/mri/rh.surface.defects.mgz /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/label/rh.nofix.cortex.label
+mri_label2vol supposed to be reproducible but seed not set
+Contraining to label /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/label/rh.nofix.cortex.label
+Changing input type 0 to MRI_INT
+Converting defects to volume: offset=2000, merge=0
+Writing to /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/mri/rh.surface.defects.mgz
+mris_defects_pointset -s /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.orig.nofix -d /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.defect_labels -o /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.defects.pointset --label /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/label/rh.nofix.cortex.label
+Reading in surface /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.orig.nofix
+Reading in defect segmentation /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/surf/rh.defect_labels
+Reading in label /out/sourcedata/freesurfer/sub-v2s5x29557_ses-1/label/rh.nofix.cortex.label
+#VMPC# mris_defects_pointset 1545436
+mris_defects_pointset done
+ 
+Started at Fri Mar 13 11:02:05 CET 2026 
+Ended   at Fri Mar 13 11:02:34 CET 2026
+Defect2seg-Run-Time-Sec 29
+Defect2seg-Run-Time-Min 0.58
+Defect2seg-Run-Time-Hours 0.01
+ 
+defect2seg Done
